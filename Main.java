@@ -34,7 +34,13 @@ public class Main{
               break;
 
         case '/':
+              if(num2 == 0){
+                     System.out.println("Cannot divide by zero");
+                     return;
+              }
+              else {
               result = num1 / num2;
+              }
               break;
 
         case '%':
