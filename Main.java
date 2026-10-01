@@ -39,7 +39,7 @@ public class Main{
         case '/':
               if(num2 == 0){
                      System.out.println("Cannot divide by zero");
-                     return;
+                   continue;
               }
               else {
               result = num1 / num2;
@@ -53,7 +53,7 @@ public class Main{
          default:
          System.out.println("Invalid operator");  
         continue;
-        
+
        }
 
        System.out.println("Result: " +result);
