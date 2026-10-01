@@ -52,8 +52,8 @@ public class Main{
 
          default:
          System.out.println("Invalid operator");  
-         scan.close();
-         return;
+        continue;
+        
        }
 
        System.out.println("Result: " +result);
