@@ -12,6 +12,12 @@ public class Main{
          while(choice == 'y' || choice=='Y')
         {
          System.out.println("Enter your number1 : ");
+         if (!scan.hasNextDouble())
+         {
+              System.out.println("Invalid Input");
+              scan.next();
+              continue;
+         } 
        double num1 = scan.nextDouble();
 
        System.out.println("Enter the operator +, -, *, /, %: ");
@@ -19,6 +25,12 @@ public class Main{
 
 
         System.out.println("Enter your number2 : ");
+         if (!scan.hasNextDouble())
+         {
+              System.out.println("Invalid Input");
+               scan.next();
+              continue;
+         } 
        double num2 = scan.nextDouble();
 
        double result;
