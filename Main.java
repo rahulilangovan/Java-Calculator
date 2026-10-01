@@ -11,10 +11,41 @@ public class Main{
          System.out.println("Enter your number1 : ");
        double num1 = scan.nextDouble();
 
+       System.out.println("Enter the operator +, -, *, /, %: ");
+       char operator = scan.next().charAt(0);
+
+
         System.out.println("Enter your number2 : ");
        double num2 = scan.nextDouble();
 
-       double result = num1 + num2;
+       double result;
+       switch (operator)
+       {
+       case '+':
+              result = num1 + num2;
+              break; 
+
+       case '-':
+              result = num1 - num2;
+              break;
+
+         case '*':
+              result = num1 * num2;
+              break;
+
+        case '/':
+              result = num1 / num2;
+              break;
+
+        case '%':
+              result = num1 % num2;
+              break;
+
+         default:
+         System.out.println("Invalid operator");  
+         scan.close();
+         return;
+       }
 
        System.out.println("Result: " +result);
        scan.close();
