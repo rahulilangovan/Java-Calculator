@@ -8,6 +8,9 @@ public class Main{
 
          Scanner scan = new Scanner(System.in);
 
+         char choice = 'y';
+         while(choice == 'y' || choice=='Y')
+        {
          System.out.println("Enter your number1 : ");
        double num1 = scan.nextDouble();
 
@@ -54,8 +57,15 @@ public class Main{
        }
 
        System.out.println("Result: " +result);
-       scan.close();
+      
+
+       System.out.println("Do yu wnat to continue ? (y/n)");
+       choice = scan.next().charAt(0);
        }
+        System.out.println("Program closed");
+        scan.close();
+       
+   } 
 }
       
        
