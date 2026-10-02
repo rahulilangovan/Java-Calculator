@@ -29,7 +29,7 @@ public class Main{
          if (!scan.hasNextDouble())
          {
               System.out.println("Invalid Input");
-               scan.next();
+              scan.next();
               continue;
          } 
        double num2 = scan.nextDouble();
@@ -69,7 +69,7 @@ public class Main{
 
        }
      
-       System.out.println("Result: " +result);
+       System.out.println("Result:"+num1+" "+operator+" "+num2 + " "+ "= n" +result);
       
 
        System.out.println("Do yu wnat to continue ? (y/n)");
@@ -112,6 +112,7 @@ public class Main{
               System.out.println("Java Calculator");     
               System.out.println("===================="); 
             }
+
 }
       
        
