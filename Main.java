@@ -38,15 +38,15 @@ public class Main{
        switch (operator)
        {
        case '+':
-              result = num1 + num2;
+              result = addNumbers(num1, num2);
               break; 
 
        case '-':
-              result = num1 - num2;
+              result = subNumbers(num1, num2);
               break;
 
          case '*':
-              result = num1 * num2;
+              result = mulNumbers(num1, num2);
               break;
 
         case '/':
@@ -55,12 +55,12 @@ public class Main{
                    continue;
               }
               else {
-              result = num1 / num2;
+              result = divNumbers(num1, num2);
               }
               break;
 
         case '%':
-              result = num1 % num2;
+              result = modNumbers(num1, num2);
               break;
 
          default:
@@ -69,7 +69,6 @@ public class Main{
 
        }
      
-
        System.out.println("Result: " +result);
       
 
@@ -79,6 +78,35 @@ public class Main{
         System.out.println("Program closed");
         scan.close();
    } 
+          static  double addNumbers(double num1, double num2)
+          {
+             return num1 + num2;
+          }
+
+           static  double subNumbers(double num1, double num2)
+          {
+             return num1 - num2;
+          }
+
+
+           static  double mulNumbers(double num1, double num2)
+          {
+             return num1 * num2;
+          }
+
+
+           static  double divNumbers(double num1, double num2)
+          {
+             return num1 / num2;
+          }
+
+
+           static  double modNumbers(double num1, double num2)
+          {
+             return num1 % num2;
+          }
+
+
    static void showTitle(){
               System.out.println("Java Calculator");      
             }
