@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Main{
        public static void main(String args[])
        {
-        System.out.println("Java Calculator");
+           showTitle();
+        
 
          Scanner scan = new Scanner(System.in);
 
@@ -67,6 +68,7 @@ public class Main{
         continue;
 
        }
+     
 
        System.out.println("Result: " +result);
       
@@ -76,8 +78,10 @@ public class Main{
        }
         System.out.println("Program closed");
         scan.close();
-       
    } 
+   static void showTitle(){
+              System.out.println("Java Calculator");      
+            }
 }
       
        
