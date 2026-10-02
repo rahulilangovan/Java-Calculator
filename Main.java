@@ -108,7 +108,9 @@ public class Main{
 
 
    static void showTitle(){
-              System.out.println("Java Calculator");      
+              System.out.println("====================");
+              System.out.println("Java Calculator");     
+              System.out.println("===================="); 
             }
 }
       
