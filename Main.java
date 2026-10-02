@@ -1,4 +1,3 @@
-import java.lang.System;
 import java.util.Scanner;
 
 public class Main{
@@ -6,7 +5,6 @@ public class Main{
        {
            showTitle();
         
-
          Scanner scan = new Scanner(System.in);
 
          char choice = 'y';
@@ -23,7 +21,6 @@ public class Main{
 
        System.out.println("Enter the operator +, -, *, /, %: ");
        char operator = scan.next().charAt(0);
-
 
         System.out.println("Enter your number2 : ");
          if (!scan.hasNextDouble())
@@ -69,13 +66,20 @@ public class Main{
 
        }
      
-       System.out.println("Result:"+num1+" "+operator+" "+num2 + " "+ "= n" +result);
+       System.out.println("Result:"+num1+" "+operator+" "+num2 + " "+ "= " +result);
       
+      System.out.println("Do you want to continue? (y/n)");
+choice = scan.next().charAt(0);
 
-       System.out.println("Do yu wnat to continue ? (y/n)");
-       choice = scan.next().charAt(0);
+while (choice != 'y' && choice != 'Y' && choice != 'n' && choice != 'N') {
+    System.out.println("Invalid choice");
+    System.out.println("Please enter y or n:");
+    choice = scan.next().charAt(0);
+}
+       
        }
         System.out.println("Program closed");
+
         scan.close();
    } 
           static  double addNumbers(double num1, double num2)
@@ -99,7 +103,7 @@ public class Main{
           {
              return num1 / num2;
           }
-
+          
 
            static  double modNumbers(double num1, double num2)
           {
